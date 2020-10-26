@@ -36,7 +36,9 @@ nav,
 .by-who,
 .location,
 .card-text,
-.buttons-hotads > a {
+.buttons-hotads > a,
+.footer-description,
+.navigation-link > a {
   font-size: 0.8rem;
   font-family: $gotham-font;
 }
@@ -56,4 +58,21 @@ nav,
 .buttons-hotads {
   display: flex;
   justify-content: space-between;
+}
+
+.border-pink {
+  border-bottom: 1px solid $pink;
+}
+
+.navigation-link {
+  list-style: none;
+}
+
+.pink-hover {
+  color: $black;
+  text-decoration: none;
+}
+
+.pink-hover:hover {
+  color: $pink;
 }

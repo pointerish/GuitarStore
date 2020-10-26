@@ -29,7 +29,9 @@ nav,
 .by-who,
 .location,
 .card-text,
-.buttons-hotads > a {
+.buttons-hotads > a,
+.footer-description,
+.navigation-link > a {
   font-size: 0.8rem;
   font-family: "Raleway", sans-serif;
 }
@@ -49,6 +51,23 @@ nav,
 .buttons-hotads {
   display: flex;
   justify-content: space-between;
+}
+
+.border-pink {
+  border-bottom: 1px solid #d35266;
+}
+
+.navigation-link {
+  list-style: none;
+}
+
+.pink-hover {
+  color: #383838;
+  text-decoration: none;
+}
+
+.pink-hover:hover {
+  color: #d35266;
 }
 
 /*# sourceMappingURL=style.css.map */
