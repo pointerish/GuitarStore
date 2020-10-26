@@ -11,7 +11,7 @@
 </head>
 <body class="bg-light">
     <header class="mb-2">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light d-lg-flex justify-content-space-lg-between">
             <a class="navbar-brand" href="#">
               <img src="assets/favicon.png" width="30px" height="30px" alt="Navbar Logo">
             </a>
@@ -42,6 +42,23 @@
     </header>
     <main>
       <div class="hot-ads container-fluid mt-6">
+        <div class="row search-box mb-4 mx-0">
+          <select class="col-lg-3 pl-0 mr-1 d-none">
+            <optgroup>
+              <option value="Search All" selected><span class="all">All</span></option>
+              <option value="Ibanez">Ibanez</option>
+              <option value="Fender">Fender</option>
+              <option value="Rickenbacker">Rickenbacker</option>
+              <option value="Gibson">Gibson</option>
+              <option value="Caparison">Caparison</option>
+            </optgroup>
+          </select>
+          <input class="col-6 col-lg-3 mr-2 pl-0 search-placeholders" type="text" placeholder="What are you seeking?">
+          <input class="col-lg-3 d-none pl-0 search-placeholders" type="text" placeholder="Where?">
+          <button class="btn-black py-0 px-1 text-white col-4" onclick="location.href='search.html';">
+            Search! <i class="ml-2 fas fa-search text-white"></i>
+          </button>
+        </div>
         <h5 class="font-weight-bolder">Hot Ads</h5>
         <div class="row-fluid">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -55,8 +72,8 @@
                     <p class="card-text text-secondary">By David Gilmore</p>
                     <p class="card-text text-secondary">Location: London</p>
                     <div class="buttons-hotads d-flex">
-                      <a href="#" class="btn btn-secondary col-5">$1,500</a>
-                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
+                      <a href="#" class="btn btn-secondary border-0 col-5">$1,500</a>
+                      <a href="#" class="btn btn-secondary border-0 col-6 ml-2">Purchase Details</a>
                     </div>
                   </div>
                 </div>
@@ -70,8 +87,8 @@
                     <p class="card-text text-secondary m-0">By Caitlin Booth</p>
                     <p class="card-text text-secondary">Location: Surrey</p>
                     <div class="buttons-hotads d-flex">
-                      <a href="#" class="btn btn-secondary col-4">$1,500</a>
-                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
+                      <a href="#" class="btn btn-secondary border-0 col-4">$1,500</a>
+                      <a href="#" class="btn btn-secondary border-0 col-6 ml-2">Purchase Details</a>
                     </div>
                   </div>
                 </div>
@@ -85,8 +102,8 @@
                     <p class="card-text by-who text-secondary m-0">By Juan Dow</p>
                     <p class="card-text location text-secondary">Location: Sussex</p>
                     <div class="buttons-hotads d-flex">
-                      <a href="#" class="btn btn-secondary col-4 p-0">$1,500</a>
-                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
+                      <a href="#" class="btn btn-secondary col-4 border-0 p-0">$1,500</a>
+                      <a href="#" class="btn btn-secondary col-6 border-0 ml-2">Purchase Details</a>
                     </div>
                   </div>
                 </div>

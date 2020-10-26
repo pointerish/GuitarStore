@@ -11,6 +11,7 @@ h5 {
 }
 
 nav,
+.search,
 .dropdown-menu {
   background-color: #383838;
   border: 0;
@@ -36,12 +37,21 @@ nav,
   font-family: "Raleway", sans-serif;
 }
 
+.all,
+optgroup > option {
+  font-size: 0.9em;
+}
+
 .btn {
   background-color: #d35266;
 }
 
+.btn-black {
+  background-color: #383838;
+}
+
 .feat-guitar-title {
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .pink {
@@ -68,6 +78,22 @@ nav,
 
 .pink-hover:hover {
   color: #d35266;
+}
+
+.search-box {
+  outline: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+.search-box button {
+  font-size: 0.9em;
+}
+
+.search-placeholders::placeholder {
+  font-size: 0.9em;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

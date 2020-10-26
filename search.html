@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Guitar Store</title>
+</head>
+<body class="bg-light">
+    <header class="mb-2">
+        <nav class="navbar navbar-expand-lg navbar-light d-lg-flex justify-content-space-lg-between">
+            <a class="navbar-brand" href="#">
+              <img src="assets/favicon.png" width="30px" height="30px" alt="Navbar Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-home text-white"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-layer-group text-white"></i> Collections <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="brands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-guitar text-white"></i> Brands
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="brands">
+                    <a class="dropdown-item text-white font-weight-bold" href="#">Ibanez</a>
+                    <a class="dropdown-item text-white font-weight-bold" href="#">Gibson</a>
+                    <a class="dropdown-item text-white font-weight-bold"  href="#">Fender</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <div class="container mt-4">
+        <div class="search-box mb-4">
+            <select class="col-6">
+              <option value="" selected disabled hidden>Search All</option>
+              <option value="Ibanez">Ibanez</option>
+              <option value="Fender">Fender</option>
+              <option value="Rickenbacker">Rickenbacker</option>
+              <option value="Gibson">Gibson</option>
+              <option value="Caparison">Caparison</option>
+            </select>
+            <button class="btn-black py-0 text-white" onclick="location.href='search.html';">Search!</button>
+          </div>
+      </div>
+    </main>
+    <footer class="bg-white mt-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 d-none">
+            <p class="text-secondary footer-description">Guitar Store is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, GuitarStore is store where legends such as Jose Feliciano and Juanes shop for their shredding machines. The Stratocaster and the Les Paul were conceived within its walls. GuitarStore is the store where guitars are bought by The Avengers and by The X-Men. Guitar Store is THE store. Period.</p>
+          </div>
+          <div class="col-12">
+            <h5 class="pink border-pink pb-2">NAVIGATION</h5>
+            <ul class="navigation-links pl-0">
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">HOME</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">SIGN IN</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">SIGN UP</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">T & C</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">FAQ</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">HELP</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h5 class="pink border-pink pb-2">CATEGORIES</h5>
+            <ul class="navigation-links pl-0">
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">ELECTRIC</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">ACOUSTIC</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">SEMI-HOLLOW</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">LAP</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">12-STRING</a>
+              </li>
+              <li class="navigation-link">
+                <a class="pink-hover" href="#">MANDOLIN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <ul class="navigation-links d-flex pl-0">
+              <li class="navigation-link pr-2">
+                <a class="pink-hover" href="#">
+                  <i class="fab fa-facebook-f h2"></i>
+                </a>
+              </li>
+              <li class="navigation-link pr-2">
+                <a class="pink-hover" href="#">
+                  <i class="fab fa-twitter h2"></i>
+                </a>
+              </li>
+              <li class="navigation-link pr-2">
+                <a class="pink-hover" href="#">
+                  <i class="fab fa-instagram h2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
