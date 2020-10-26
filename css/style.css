@@ -38,4 +38,17 @@ nav,
   background-color: #d35266;
 }
 
+.feat-guitar-title {
+  font-size: 0.9em;
+}
+
+.pink {
+  color: #d35266;
+}
+
+.buttons-hotads {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
