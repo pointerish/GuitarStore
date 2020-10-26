@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans");
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+nav,
+.dropdown-menu {
+  background-color: #383838;
+  border: 0;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 80%;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.by-who,
+.location,
+.card-text,
+.buttons-hotads > a {
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  background-color: #d35266;
+}
+
+/*# sourceMappingURL=style.css.map */

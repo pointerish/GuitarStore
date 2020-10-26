@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+
+$black: #383838;
+$grey: #888888;
+$pink: #d35266;
+$gotham-font: 'Raleway', sans-serif;
+$helvetica-font: 'IBM Plex Sans', sans-serif;
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-family: $gotham-font;
+}
+
+nav,
+.dropdown-menu {
+  background-color: $black;
+  border: 0;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 80%;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-family: $gotham-font;
+}
+
+.by-who,
+.location,
+.card-text,
+.buttons-hotads > a {
+  font-size: 0.8rem;
+  font-family: $gotham-font;
+}
+
+.btn {
+  background-color: $pink;
+}

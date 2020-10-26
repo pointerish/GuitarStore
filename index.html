@@ -9,26 +9,26 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Guitar Store</title>
 </head>
-<body>
+<body class="bg-light">
     <header class="mb-2">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
               <img src="assets/favicon.png" width="30px" height="30px" alt="Navbar Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-bars text-white"></i>
             </button>
-            <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-white font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-home text-white"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white font-weight-bold" href="#">Features</a>
+                  <a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-layer-group text-white"></i> Collections <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="brands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Brands
+                    <i class="fas fa-guitar text-white"></i> Brands
                   </a>
                   <div class="dropdown-menu" aria-labelledby="brands">
                     <a class="dropdown-item text-white font-weight-bold" href="#">Ibanez</a>
@@ -42,16 +42,22 @@
     </header>
     <main>
       <div class="hot-ads container-fluid mt-6">
+        <h5 class="font-weight-bolder">Hot Ads</h5>
         <div class="row-fluid">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="card border-0">
-                  <img class="card-img-top" src="assets/pink-tele.jpg" alt="Fender Telecaster">
+                  <img class="card-img-top carousel-img" src="assets/pink-tele.jpg" alt="Fender Telecaster">
                   <div class="card-body">
-                    <h5 class="card-title">Fender Telecaster Electric Pink</h5>
-                    <p class="card-text">A reissue of the legendary 1958 Telecaster in a lovely Electric Pink finish.</p>
+                    <h5 class="card-title text-secondary font-weight-bolder">Fender Telecaster Electric Pink</h5>
+                    <p class="card-text text-secondary font-weight-bolder">A reissue of the legendary 1958 Telecaster in a lovely Electric Pink finish.</p>
                     <p class="card-text text-secondary">By David Gilmore</p>
+                    <p class="card-text text-secondary">Location: London</p>
+                    <div class="buttons-hotads d-flex">
+                      <a href="#" class="btn btn-secondary col-5">$1,500</a>
+                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -59,9 +65,14 @@
                 <div class="card border-0">
                   <img class="card-img-top" src="assets/pink-sg.jpeg" alt="Gibson SG">
                   <div class="card-body">
-                    <h5 class="card-title">Gibson SG Electric Pink</h5>
-                    <p class="card-text">The classic SG body in Electric Pink. A match made in heaven.</p>
-                    <p class="card-text text-secondary">By Caitlin Booth</p>
+                    <h5 class="card-title text-secondary font-weight-bolder">Gibson SG Electric Pink</h5>
+                    <p class="card-text text-secondary font-weight-bolder">The classic SG body in Electric Pink. A match made in heaven.</p>
+                    <p class="card-text text-secondary m-0">By Caitlin Booth</p>
+                    <p class="card-text text-secondary">Location: Surrey</p>
+                    <div class="buttons-hotads d-flex">
+                      <a href="#" class="btn btn-secondary col-4">$1,500</a>
+                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -69,12 +80,13 @@
                 <div class="card border-0">
                   <img class="card-img-top" src="assets/pink-srat.webp" alt="Fender Stratocaster">
                   <div class="card-body">
-                    <h5 class="card-title">Fender Stratocaster Electric Pink</h5>
-                    <p class="card-text">The iconic Stratocaster palyed by legends such as Hendrix, Clapton, Malmsteen in Electric Pink.</p>
-                    <p class="card-text text-secondary">By Juan Dow</p>
+                    <h5 class="card-title text-secondary font-weight-bolder">Fender Stratocaster Electric Pink</h5>
+                    <p class="card-text text-secondary font-weight-bolder">The iconic Stratocaster palyed by legends such as Hendrix, Clapton, Malmsteen in Electric Pink.</p>
+                    <p class="card-text by-who text-secondary m-0">By Juan Dow</p>
+                    <p class="card-text location text-secondary">Location: Sussex</p>
                     <div class="buttons-hotads d-flex">
-                      <a href="#" class="btn btn-secondary col-4">$1,459.99</a>
-                      <a href="#" class="btn btn-secondary col-4 ml-2">Purchase</a>
+                      <a href="#" class="btn btn-secondary col-4 p-0">$1,500</a>
+                      <a href="#" class="btn btn-secondary col-6 ml-2">Purchase Details</a>
                     </div>
                   </div>
                 </div>
