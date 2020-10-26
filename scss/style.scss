@@ -103,3 +103,7 @@ optgroup > option {
   font-size: 0.9em;
   padding: 0;
 }
+
+.no-outline:focus {
+  outline: none;
+}

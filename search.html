@@ -41,17 +41,23 @@
           </nav>
     </header>
     <main>
-      <div class="container mt-4">
-        <div class="search-box mb-4">
-            <select class="col-6">
-              <option value="" selected disabled hidden>Search All</option>
-              <option value="Ibanez">Ibanez</option>
-              <option value="Fender">Fender</option>
-              <option value="Rickenbacker">Rickenbacker</option>
-              <option value="Gibson">Gibson</option>
-              <option value="Caparison">Caparison</option>
+      <div class="container">
+        <div class="row search-box mb-4 mx-0">
+            <select class="col-lg-3 pl-0 mr-1 d-none">
+              <optgroup>
+                <option value="Search All" selected><span class="all">All</span></option>
+                <option value="Ibanez">Ibanez</option>
+                <option value="Fender">Fender</option>
+                <option value="Rickenbacker">Rickenbacker</option>
+                <option value="Gibson">Gibson</option>
+                <option value="Caparison">Caparison</option>
+              </optgroup>
             </select>
-            <button class="btn-black py-0 text-white" onclick="location.href='search.html';">Search!</button>
+            <input class="col-6 col-lg-3 mr-2 pl-0 search-placeholders no-outline" type="text" placeholder="What are you seeking?">
+            <input class="col-lg-3 d-none pl-0 search-placeholders" type="text" placeholder="Where?">
+            <button class="btn-black py-0 px-1 text-white col-4" onclick="location.href='search.html';">
+              Search! <i class="ml-2 fas fa-search text-white"></i>
+            </button>
           </div>
       </div>
     </main>

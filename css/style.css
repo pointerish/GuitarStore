@@ -96,4 +96,8 @@ optgroup > option {
   padding: 0;
 }
 
+.no-outline:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=style.css.map */
