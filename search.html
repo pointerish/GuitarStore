@@ -12,7 +12,7 @@
 <body class="bg-light">
     <header>
         <nav class="navbar navbar-expand-md navbar-light d-lg-flex justify-content-space-md-between">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="assets/favicon.png" width="30px" height="30px" alt="Navbar Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,40 +48,71 @@
           </nav>
     </header>
     <main>
-      <div class="container-fluid p-0 search-box mb-2 d-md-flex flex-md-column d-none d-md-block search-pink-bgc">
-        <div class="page-header text-center font-weight-bolder text-white d-none d-md-block pt-2">
+      <div class="container-fluid p-0 search-box mb-2 d-md-flex flex-md-column search-pink-bgc">
+        <div class="page-header text-center font-weight-bolder d-none d-md-block text-white pt-2">
           <h1>GuitarStore</h1>
           <h3>The go-to store for guitar legends.</h3>
         </div>
-        <select class="col-lg-3 pl-0 mr-1 d-none">
-          <optgroup>
-            <option value="Search All" selected><span class="all">All</span></option>
-            <option value="Ibanez">Ibanez</option>
-            <option value="Fender">Fender</option>
-            <option value="Rickenbacker">Rickenbacker</option>
-            <option value="Gibson">Gibson</option>
-            <option value="Caparison">Caparison</option>
-          </optgroup>
-        </select>
-        <input class="col-6 col-lg-3 mr-2 pl-0 search-placeholders no-outline" type="text" placeholder="Enter keyword">
-        <input class="col-lg-3 d-none pl-0 search-placeholders" type="text" placeholder="Where?">
-        <button class="btn-black py-0 px-1 text-white col-4" onclick="location.href='search.html';">
-          Search! <i class="ml-2 fas fa-search text-white"></i>
-        </button>
+        <form class="inline-form d-flex justify-content-center py-4 py-md-4">
+          <input class="search-placeholders no-outline mx-2 mx-md-2" type="text" placeholder="Enter keyword">
+          <input class="d-none d-md-block pl-0 search-placeholders mx-2 mx-md-2" type="text" placeholder="Where?">
+          <a href="search.html" class="btn btn-secondary border-0 bg-dark">
+            Search! <i class="ml-2 fas fa-search text-white"></i>
+          </a>
+        </form>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 d-none d-md-block">asdasdas</div>
-          <div class="col-10 col-md-8 mr-auto ml-auto d-flex flex-column border col-bg-white">
-            <h5 class="font-weight-bolder pt-4 results">24 results</h5>
+          <div class="col-md-4 d-none d-md-block py-3 px-0">
+            <div class="checkboxes d-flex">
+              <div class="checkbox-1">
+                <input type="checkbox" id="bass-guitar">
+                <label class="h5" for="bass-guitar">Buy</label>
+              </div>
+              <div class="checkbox-2 px-4">
+                <input type="checkbox" id="bass-guitar">
+                <label class="h5" for="bass-guitar">Rent</label>
+              </div>
+            </div>
+            <h4 class="font-weight-bolder mt-4">Types</h4>
+            <hr/>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Guitar</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Bass</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Accessories</label>
+            <h4 class="font-weight-bolder mt-4">Price</h4>
+            <hr/>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">&lt; $100</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">&gt; $100</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">&gt; $1000</label>
+            <h4 class="font-weight-bolder mt-4">Brands</h4>
+            <hr/>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Ibanez</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Caparison</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Gibson</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">Warwick</label><br>
+            <input type="checkbox" id="bass-guitar">
+            <label class="h5" for="bass-guitar">NYXL</label><br>
+          </div>
+          <div class="col-12 col-md-8 mr-auto ml-auto d-flex flex-column border col-bg-white">
+            <h5 class="font-weight-bolder py-2 results">24 results</h5>
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/rabeapick.jpeg" class="card-img-top" alt="Rabea Pick">
+              <img src="assets/rabeapick.jpeg" class="card-img-top pt-4" alt="Rabea Pick">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Rabea Massad's Guitar Pick</h5>
+                <h5 class="card-title text-secondary font-weight-bolder pt-2 mb-0">Rabea Massad's Guitar Pick</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
-                <p class="card-text">The signature Rabea Massad's guitar pick for the picky ones out there.</p>
+                <p class="card-text pr-2">The signature Rabea Massad's guitar pick for the picky ones out there.</p>
                 <p class="card-text text-secondary by-who">By Lucy Morning</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
                   <a href="#" class="btn btn-secondary border-0">$1,500</a>
                 </div>
@@ -89,13 +120,13 @@
             </div>
 
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/rickenbackerbass.jpg" class="card-img-top" alt="Rickenbacker Bass">
+              <img src="assets/rickenbackerbass.jpg" class="card-img-top pt-4" alt="Rickenbacker Bass">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Rickenbacker Bass</h5>
+                <h5 class="card-title text-secondary font-weight-bolder mb-0 pt-2">Rickenbacker Bass</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
-                <p class="card-text">The legendary bass preferred by Glenn Hughes. Rock on!</p>
+                <p class="card-text pr-2">The legendary bass preferred by Glenn Hughes. Rock on!</p>
                 <p class="card-text text-secondary by-who">By Lily Fall</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
                   <a href="#" class="btn btn-secondary border-0">$1,999</a>
                 </div>
@@ -103,13 +134,13 @@
             </div>
 
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/fretwrap.jpg" class="card-img-top" alt="fretwrap">
+              <img src="assets/fretwrap.jpg" class="card-img-top pt-4" alt="fretwrap">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Fret Wrap</h5>
+                <h5 class="card-title text-secondary font-weight-bolder pt-2 mb-0">Fret Wrap</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
                 <p class="card-text">For the players with dirty fingers and dirty notes. Clean those out with a fretwrap!</p>
                 <p class="card-text text-secondary by-who">By Amos A. Martinez</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
                   <a href="#" class="btn btn-secondary border-0">$45.99</a>
                 </div>
@@ -117,13 +148,13 @@
             </div>
 
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/caparison.jpg" class="card-img-top" alt="Caparison Guitar">
+              <img src="assets/caparison.jpg" class="card-img-top pt-4" alt="Caparison Guitar">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Caparison FX</h5>
+                <h5 class="card-title text-secondary font-weight-bolder pt-2 mb-0">Caparison FX</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
                 <p class="card-text">The metal machine from Hades. A guitar not made for the blues lover.</p>
                 <p class="card-text text-secondary by-who">By Takayoshi Matsumoto</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
                   <a href="#" class="btn btn-secondary border-0">$5000</a>
                 </div>
@@ -131,27 +162,27 @@
             </div>
 
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/capo.jpeg" class="card-img-top" alt="Capo">
+              <img src="assets/warwick.jpg" class="card-img-top pt-4" alt="Warwick">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Capo</h5>
+                <h5 class="card-title text-secondary font-weight-bolder pt-2 mb-0">Warwick Bass</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
-                <p class="card-text">For those in dire need to transpose themselves.</p>
+                <p class="card-text">For those in dire need to go beneath all worries!</p>
                 <p class="card-text text-secondary by-who">By Minas Morgul</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
-                  <a href="#" class="btn btn-secondary border-0">$49.99</a>
+                  <a href="#" class="btn btn-secondary border-0">$6000</a>
                 </div>
               </div>
             </div>
 
             <div class="search-result mb-2 mb-md-4 shadow bg-white">
-              <img src="assets/pink-srat.webp" class="card-img-top" alt="Pink Strat">
+              <img src="assets/ibanez-grey.jpg" class="card-img-top pt-4" alt="Ibanez">
               <div class="search-result-text pl-md-2">
-                <h5 class="card-title text-secondary font-weight-bolder mb-0">Fender Stratocaster Electric Pink</h5>
+                <h5 class="card-title text-secondary font-weight-bolder pt-2 mb-0">Ibanez Axion</h5>
                 <p class="card-text font-weight-bolder pink">New</p>
                 <p class="card-text">Play some Hello Kitty theme song and rock on!</p>
                 <p class="card-text text-secondary by-who">By Kit Hallo</p>
-                <div class="date-and-price d-flex justify-content-space-between align-items-center py-md-2">
+                <div class="date-and-price d-flex justify-content-space-between align-items-center py-2 py-md-2">
                   <span class="card-text text-secondary mr-2">Location: London</span>
                   <a href="#" class="btn btn-secondary border-0">$1,500</a>
                 </div>
@@ -208,9 +239,6 @@
               </li>
               <li class="navigation-link">
                 <a class="pink-hover" href="#">ACOUSTIC</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SEMI-HOLLOW</a>
               </li>
               <li class="navigation-link">
                 <a class="pink-hover" href="#">LAP</a>

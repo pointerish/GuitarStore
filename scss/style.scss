@@ -124,6 +124,11 @@ optgroup > option {
   background-color: $pink;
 }
 
+input[type="checkbox"]{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 
 @media screen and(min-width: 768px) and(max-width: 1200px) {
   
@@ -155,11 +160,11 @@ optgroup > option {
   }
 
   .navigation-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .navigation-link > a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .footer-data {
