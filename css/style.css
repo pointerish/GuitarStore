@@ -102,6 +102,11 @@ optgroup > option {
   outline: none;
 }
 
+.search-result {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .search-pink-bgc {
     background-color: #d35266;
@@ -146,6 +151,16 @@ optgroup > option {
   .footer-data {
     display: grid;
     grid-template-columns: 60% 20% 20%;
+  }
+
+  .search-result-text > .card-title {
+    font-size: 1.3rem;
+  }
+
+  .date-and-price > a,
+.date-and-price > span,
+.search-result-text > .card-text {
+    font-size: 1.1rem;
   }
 }
 
