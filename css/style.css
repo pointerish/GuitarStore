@@ -82,10 +82,6 @@ optgroup > option {
 
 .search-box {
   outline: none;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
 }
 .search-box button {
   font-size: 0.9em;
@@ -98,6 +94,44 @@ optgroup > option {
 
 .no-outline:focus {
   outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .search-placeholders::placeholder {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .results,
+.card-title {
+    font-size: 1.7rem;
+  }
+
+  .card-text,
+.search-button,
+.date-and-price,
+.footer-description,
+.date-and-price > a {
+    font-size: 1.3rem;
+  }
+
+  .footer-description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navigation-title {
+    font-size: 1.4rem;
+  }
+
+  .navigation-link > a {
+    font-size: 1.2rem;
+  }
+
+  .footer-data {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

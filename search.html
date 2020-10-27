@@ -11,7 +11,7 @@
 </head>
 <body class="bg-light">
     <header class="mb-2">
-        <nav class="navbar navbar-expand-lg navbar-light d-lg-flex justify-content-space-lg-between">
+        <nav class="navbar navbar-expand-md navbar-light d-lg-flex justify-content-space-md-between">
             <a class="navbar-brand" href="#">
               <img src="assets/favicon.png" width="30px" height="30px" alt="Navbar Logo">
             </a>
@@ -38,11 +38,19 @@
                 </li>
               </ul>
             </div>
+            <a class="btn btn-secondary text-white font-weight-bold d-none d-md-block mr-3" href="#">POST AN AD</a>
+            <a class="navbar-icons d-none d-md-block mr-3 text-decoration-none" href="#">
+              <i class="fas fa-envelope text-white"></i>
+            </a>
+            <a class="navbar-icons d-none d-md-block mr-3 text-white text-decoration-none" href="#">
+              <i class="fas fa-user mr-2 text-white"></i>USER
+            </a>
           </nav>
     </header>
     <main>
       <div class="container">
         <div class="row search-box mb-4 mx-0">
+          <div class="col-10 ml-auto mr-auto px-0">
             <select class="col-lg-3 pl-0 mr-1 d-none">
               <optgroup>
                 <option value="Search All" selected><span class="all">All</span></option>
@@ -55,16 +63,17 @@
             </select>
             <input class="col-6 col-lg-3 mr-2 pl-0 search-placeholders no-outline" type="text" placeholder="What are you seeking?">
             <input class="col-lg-3 d-none pl-0 search-placeholders" type="text" placeholder="Where?">
-            <button class="btn-black py-0 px-1 text-white col-4" onclick="location.href='search.html';">
+            <button class="btn-black py-1 px-1 text-white col-5 search-button" onclick="location.href='search.html';">
               Search! <i class="ml-2 fas fa-search text-white"></i>
             </button>
           </div>
+        </div>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-4 d-none">asdasdas</div>
           <div class="col-10 mr-auto ml-auto d-flex flex-column border bg-white">
-            <h5 class="font-weight-bolder">24 results</h5>
+            <h5 class="font-weight-bolder pt-4 results">24 results</h5>
             <div class="search-result mb-2">
               <img src="assets/rabeapick.jpeg" class="card-img-top" alt="Rabea Pick">
               <div class="search-result-text">
@@ -164,12 +173,12 @@
     </main>
     <footer class="bg-white mt-2">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 d-none">
-            <p class="text-secondary footer-description">Guitar Store is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, GuitarStore is store where legends such as Jose Feliciano and Juanes shop for their shredding machines. The Stratocaster and the Les Paul were conceived within its walls. GuitarStore is the store where guitars are bought by The Avengers and by The X-Men. Guitar Store is THE store. Period.</p>
+        <div class="row footer-data">
+          <div class="col-lg-6 d-none d-md-block">
+            <p class="text-secondary footer-description"><b>GuitarStore</b> is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, <b>GuitarStore</b> is the store where legends such as Jose Feliciano and Juanes shop for their shredding machines. <b>GuitarStore</b> is <b>THE</b> store. Period.</p>
           </div>
           <div class="col-12">
-            <h5 class="pink border-pink pb-2">NAVIGATION</h5>
+            <h5 class="pink border-pink pb-2 navigation-title">NAVIGATION</h5>
             <ul class="navigation-links pl-0">
               <li class="navigation-link">
                 <a class="pink-hover" href="#">HOME</a>
@@ -192,7 +201,7 @@
             </ul>
           </div>
           <div class="col-12">
-            <h5 class="pink border-pink pb-2">CATEGORIES</h5>
+            <h5 class="pink border-pink pb-2 navigation-title">CATEGORIES</h5>
             <ul class="navigation-links pl-0">
               <li class="navigation-link">
                 <a class="pink-hover" href="#">ELECTRIC</a>
