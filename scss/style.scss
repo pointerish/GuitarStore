@@ -13,6 +13,7 @@ $helvetica-font: 'IBM Plex Sans', sans-serif;
   box-sizing: border-box;
 }
 
+h1,
 h5 {
   font-family: $gotham-font;
 }
@@ -22,6 +23,11 @@ nav,
 .dropdown-menu {
   background-color: $black;
   border: 0;
+}
+
+.icon-carousel {
+  font-size: 2.5rem;
+  color: $pink;
 }
 
 .carousel-img {
@@ -106,6 +112,15 @@ optgroup > option {
 
 @media screen and(min-width: 768px) and(max-width: 1200px) {
   
+  .search-pink-bgc {
+    background-color: $pink;
+  }
+
+  .carousel-item > .card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
   .search-placeholders::placeholder {
     font-size: 1.3rem;
     padding: 0;
