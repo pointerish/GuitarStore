@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
 
 $black: #383838;
-$grey: #888888;
+$grey: #888;
 $pink: #d35266;
 $gotham-font: 'Raleway', sans-serif;
 $helvetica-font: 'IBM Plex Sans', sans-serif;
@@ -124,14 +124,12 @@ optgroup > option {
   background-color: $pink;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   width: 1.2rem;
   height: 1.2rem;
 }
 
-
 @media screen and(min-width: 768px) and(max-width: 1200px) {
-  
   :root {
     font-size: 18px;
   }
@@ -155,12 +153,11 @@ input[type="checkbox"]{
 
   .footer-data {
     display: grid;
-    grid-template-columns: 60% 20% 20%; 
+    grid-template-columns: 60% 20% 20%;
   }
 }
 
 @media screen and(min-width: 1200px) {
-  
   :root {
     font-size: 24px;
   }
@@ -168,5 +165,4 @@ input[type="checkbox"]{
   .carousel-item > .card {
     @include hot-ad-grid;
   }
-  
 }
