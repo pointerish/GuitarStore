@@ -48,29 +48,21 @@
       </nav>
 </header>
     <main>
-      <div class="container-fluid p-0 search-box mb-2 d-md-flex flex-md-column d-none d-md-block search-pink-bgc">
-        <div class="page-header text-center font-weight-bolder text-white d-none d-md-block pt-2">
+      <div class="container-fluid p-0 search-box mb-2 d-md-flex flex-md-column search-pink-bgc">
+        <div class="page-header text-center font-weight-bolder d-none d-md-block text-white pt-2">
           <h1>GuitarStore</h1>
           <h3>The go-to store for guitar legends.</h3>
         </div>
-        <select class="col-lg-3 pl-0 mr-1 d-none">
-          <optgroup>
-            <option value="Search All" selected><span class="all">All</span></option>
-            <option value="Ibanez">Ibanez</option>
-            <option value="Fender">Fender</option>
-            <option value="Rickenbacker">Rickenbacker</option>
-            <option value="Gibson">Gibson</option>
-            <option value="Caparison">Caparison</option>
-          </optgroup>
-        </select>
-        <input class="col-6 col-lg-3 mr-2 pl-0 search-placeholders no-outline" type="text" placeholder="Enter keyword">
-        <input class="col-lg-3 d-none pl-0 search-placeholders" type="text" placeholder="Where?">
-        <button class="btn-black py-0 px-1 text-white col-4" onclick="location.href='search.html';">
-          Search! <i class="ml-2 fas fa-search text-white"></i>
-        </button>
+        <form class="inline-form d-flex justify-content-center py-4 py-md-4">
+          <input class="search-placeholders no-outline mx-2 mx-md-2" type="text" placeholder="Enter keyword">
+          <input class="d-none d-md-block pl-0 search-placeholders mx-2 mx-md-2" type="text" placeholder="Where?">
+          <button class="btn-black px-1 text-white mx-2 mx-md-2" onclick="location.href='search.html';">
+            Search! <i class="ml-2 fas fa-search text-white"></i>
+          </button>
+        </form>
       </div>
       <div class="hot-ads container-fluid bg-white">
-        <h5 class="font-weight-bolder mt-4">Hot Ads</h5>
+        <h5 class="font-weight-bolder mt-1">Hot Ads</h5>
         <div class="row">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -134,10 +126,10 @@
         <div class="row">
           <div class="card col-6 col-md-3 border-0">
             <img class="card-img-top" src="assets/ibanez-grey.jpg" alt="Ibanez Axion Labelr">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Ibanez Axion</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Japan</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Japan</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$2000</p>
@@ -146,10 +138,10 @@
           </div>
           <div class="card col-6 col-md-3 border-0">
             <img class="card-img-top" src="assets/jackson.jpg" alt="Jackson Dinky">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Jackson D22</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: USA</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: USA</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$2200</p>
@@ -158,10 +150,10 @@
           </div>
           <div class="card col-6 col-md-3 border-0">
             <img class="card-img-top" src="assets/rickebacker.jpg" alt="Rickenbacker">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Rick Bass</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Germany</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Germany</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$5500</p>
@@ -170,10 +162,10 @@
           </div>
           <div class="card col-6 col-md-3 border-0">
             <img class="card-img-top" src="assets/caparison.jpg" alt="Caparison">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Caparison X</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Japan</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Japan</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$6000</p>
@@ -186,10 +178,10 @@
         <div class="row">
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/rabeapick.jpeg" alt="Rabea Massad Pick">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Rabea Massad's Guitar Pick</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: UK</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: UK</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$2.99</p>
@@ -198,10 +190,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/petruccipick.webp" alt="John Petrucci Pick">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">John Petrucci's Guitar Pick</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: USA</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: USA</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$3.99</p>
@@ -210,10 +202,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/artisticpicks.jpg" alt="Wooden Picks">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Wooden Picks</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: China</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: China</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$1.99</p>
@@ -222,10 +214,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/pickholder.jpg" alt="Pick Holder">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Wooden Pick Holder</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: China</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: China</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$9.99</p>
@@ -234,10 +226,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/xl.webp" alt="XL Strings">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">XL Guitar Strings</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: China</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: China</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$12.99</p>
@@ -246,10 +238,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/nyxl.jpg" alt="NYXL Strings">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">NYXL Guitar Strings</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: USA</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: USA</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$15.99</p>
@@ -258,10 +250,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/nyxl2.jpg" alt="NYXL Strings">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">NYXL Guitar Strings</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: USA</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: USA</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$14.99</p>
@@ -270,10 +262,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/capo.jpeg" alt="Capo">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Guitar Capo</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: China</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: China</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$21.99</p>
@@ -282,10 +274,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/fretwrap.jpg" alt="Fret Wrap">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Fret Wrap</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: USA</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: USA</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$25.99</p>
@@ -294,10 +286,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/guitarstrap.jpg" alt="Guitar Strap">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Guitar Strap Leather</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Russia</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Russia</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$46.99</p>
@@ -306,10 +298,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/bottleneck.jpg" alt="Bottleneck">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Bottleneck</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: US</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: US</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$15.99</p>
@@ -318,10 +310,10 @@
           </div>
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/jcm800.jpg" alt="Marshall Amp">
-            <div class="card-body px-md-0">
+            <div class="card-body px-0 px-md-0">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">JCM 800</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: UK</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: UK</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$2000</p>
@@ -336,8 +328,8 @@
             <img class="card-img-top" src="assets/espbass.jpg" alt="ESP LTD Bass">
             <div class="card-body">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">ESP LTD Bass</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Japan</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Japan</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$1600</p>
@@ -348,8 +340,8 @@
             <img class="card-img-top" src="assets/rickenbackerbass.jpg" alt="Rickenbacker Bass">
             <div class="card-body">
               <h5 class="card-title text-secondary font-weight-bolder feat-guitar-title mb-0">Rickenbacker Bass</h5>
-              <p class="card-text font-weight-bolder pink">New</p>
-              <p class="card-text text-secondary">From: Germany</p>
+              <p class="card-text font-weight-bolder pink m-0">New</p>
+              <p class="card-text text-secondary m-0">From: Germany</p>
               <div class="buttons-hotads">
                 <a href="#"><i class="fas fa-plus-square text-secondary"></i></a>
                 <p class="card-text font-weight-bolder pink">$2200</p>

@@ -120,12 +120,13 @@ optgroup > option {
   grid-template-columns: 40% 60%;
 }
 
+.search-pink-bgc {
+  background-color: $pink;
+}
+
+
 @media screen and(min-width: 768px) and(max-width: 1200px) {
   
-  .search-pink-bgc {
-    background-color: $pink;
-  }
-
   .carousel-item > .card {
     @include hot-ad-grid;
   }
