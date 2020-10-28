@@ -10,7 +10,7 @@ The first Capstone Project for the Microverse FullStack program.
 This is a Guitar Store website based on the [Zattix](https://www.behance.net/gallery/24796463/ZATTIX) design 
 originally created by [Mohammed Awad](https://www.behance.net/M_Awad) on [Behance](https://www.behance.net/).
 
-This implementation follows design specifications such as color, fonts and layout.
+This implementation follows design specifications such as color, fonts, and layout.
 
 
 ![desktop](assets/screenshot.png)
@@ -28,8 +28,7 @@ This implementation follows design specifications such as color, fonts and layou
 
 ##  Getting Started
 
-To run the code simply download the repository by either cloning it or 
-downloading it as a zip file. Then use the browser to open the HTML file.
+To run the code simply download the repository by either cloning it or downloading it as a zip file. Then use the browser to open the HTML file.
 
 ## Author
 
