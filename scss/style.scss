@@ -165,4 +165,9 @@ input[type="checkbox"] {
   .carousel-item > .card {
     @include hot-ad-grid;
   }
+
+  .footer-data {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+  }
 }

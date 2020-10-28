@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans");
-
 :root {
   padding: 0;
   margin: 0;
@@ -90,7 +89,6 @@ optgroup > option {
 .search-box {
   outline: none;
 }
-
 .search-box button {
   font-size: 0.9em;
 }
@@ -146,7 +144,6 @@ input[type=checkbox] {
     grid-template-columns: 60% 20% 20%;
   }
 }
-
 @media screen and (min-width: 1200px) {
   :root {
     font-size: 24px;
@@ -156,4 +153,11 @@ input[type=checkbox] {
     display: grid;
     grid-template-columns: 40% 60%;
   }
+
+  .footer-data {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
