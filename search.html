@@ -50,15 +50,20 @@
     </header>
     <main>
       <div class="container-fluid p-0 search-box mb-2 d-md-flex flex-md-column search-pink-bgc">
-        <div class="page-header text-center font-weight-bolder d-none d-md-block text-white pt-2">
+        <section class="page-header text-center font-weight-bolder d-none d-md-block text-white pt-2">
           <h1>GuitarStore</h1>
           <h3>The go-to store for guitar legends.</h3>
-        </div>
+        </section>
         <form class="inline-form d-flex justify-content-center py-4 py-md-4">
-          <input class="search-placeholders no-outline mx-2 mx-md-2" type="text" placeholder="Enter keyword">
-          <input class="d-none d-md-block pl-0 search-placeholders mx-2 mx-md-2" type="text" placeholder="Where?">
+          <select class="d-none d-md-block no-outline">
+            <option>Guitars</option>
+            <option>Basses</option>
+            <option>Accessories</option>
+          </select>
+          <input class="search-placeholders no-outline" type="text" placeholder="Enter keyword">
+          <input class="d-none d-md-block pl-0 search-placeholders no-outline" type="text" placeholder="Where?">
           <a href="search.html" class="btn btn-secondary border-0 bg-dark">
-            Search! <i class="ml-2 fas fa-search text-white"></i>
+            Search! <i class="fas fa-search text-white"></i>
           </a>
         </form>
       </div>
@@ -203,73 +208,64 @@
         </div>
       </div>
     </main>
-    <footer class="bg-white mt-2">
-      <div class="container-fluid">
+    <footer class="bg-white mt-4">
+      <div class="container-fluid pt-4 border-bottom">
         <div class="row footer-data">
-          <div class="col-lg-6 d-none d-md-block">
-            <p class="text-secondary footer-description"><b>GuitarStore</b> is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, <b>GuitarStore</b> is the store where legends such as Jose Feliciano and Juanes shop for their shredding machines. <b>GuitarStore</b> is <b>THE</b> store. Period.</p>
+          <div class="d-none d-md-block text-center logo-text-footer px-4">
+            <img src="assets/favicon.png" width="100" height="100" alt="Navbar Logo">
+            <p class="text-secondary footer-description pt-2"><b>GuitarStore</b> is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, <b>GuitarStore</b> is the store where legends such as Jose Feliciano and Juanes shop for their shredding machines. <b>GuitarStore</b> is <b>THE</b> store. Period.</p>
           </div>
-          <div class="col-12">
-            <h5 class="pink border-pink pb-2 navigation-title">NAVIGATION</h5>
-            <ul class="navigation-links pl-0">
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">HOME</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SIGN IN</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SIGN UP</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">T & C</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">FAQ</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">HELP</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12">
+          <div class="col-12 footer-links">
             <h5 class="pink border-pink pb-2 navigation-title">CATEGORIES</h5>
-            <ul class="navigation-links pl-0">
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">ELECTRIC</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">ACOUSTIC</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">LAP</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">12-STRING</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">MANDOLIN</a>
-              </li>
-            </ul>
+            <div class="footer-links-columns">
+              <ul class="navigation-links pl-0">
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">HOME</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SIGN IN</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SIGN UP</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">T & C</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">FAQ</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">HELP</a>
+                </li>
+              </ul>
+              <ul class="navigation-links pl-0">
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">ELECTRIC</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">ACOUSTIC</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SEMI-HOLLOW</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">LAP</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">12-STRING</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">MANDOLIN</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
           <div class="col-12">
-            <ul class="navigation-links d-flex pl-0">
-              <li class="navigation-link pr-2">
-                <a class="pink-hover" href="#">
-                  <i class="fab fa-facebook-f h2"></i>
-                </a>
-              </li>
-              <li class="navigation-link pr-2">
-                <a class="pink-hover" href="#">
-                  <i class="fab fa-twitter h2"></i>
-                </a>
-              </li>
-              <li class="navigation-link pr-2">
-                <a class="pink-hover" href="#">
-                  <i class="fab fa-instagram h2"></i>
-                </a>
-              </li>
-            </ul>
+            <p class="text-secondary copyright pt-4">Copyright&#8471; 2020 GuitarStore.com. All Rights Reserverd. Designed by Mohammed Awad.</p>
           </div>
         </div>
       </div>
