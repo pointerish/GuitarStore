@@ -55,14 +55,19 @@
           <h3>The go-to store for guitar legends.</h3>
         </section>
         <form class="inline-form d-flex justify-content-center py-4 py-md-4">
-          <input class="search-placeholders no-outline mx-2 mx-md-2" type="text" placeholder="Enter keyword">
-          <input class="d-none d-md-block pl-0 search-placeholders mx-2 mx-md-2" type="text" placeholder="Where?">
+          <select class="d-none d-md-block">
+            <option>Guitars</option>
+            <option>Basses</option>
+            <option>Accessories</option>
+          </select>
+          <input class="search-placeholders no-outline mx-1 mx-md-1" type="text" placeholder="Enter keyword">
+          <input class="d-none d-md-block pl-0 search-placeholders mx-1 mx-md-1" type="text" placeholder="Where?">
           <a href="search.html" class="btn btn-secondary border-0 bg-dark">
             Search! <i class="ml-2 fas fa-search text-white"></i>
           </a>
         </form>
       </div>
-      <section class="hot-ads container-fluid bg-white col-xl-8 mr-xl-auto ml-xl-auto">
+      <section class="hot-ads container-fluid bg-white col-xl-9 mr-xl-auto ml-xl-auto">
         <h5 class="font-weight-bolder mt-1">Hot Ads</h5>
         <div class="row">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -123,7 +128,7 @@
             </a>
           </div>
         </div>
-        <h5 class="font-weight-bolder mt-4">Featured Guitars</h5>
+        <h5 class="font-weight-bolder mt-4 pt-4">Featured Guitars</h5>
         <div class="row mb-xl-6 mt-xl-6">
           <div class="card col-6 col-md-3 border-0">
             <img class="card-img-top" src="assets/ibanez-grey.jpg" alt="Ibanez Axion Labelr">
@@ -175,7 +180,7 @@
           </div>
         </div>
 
-        <h5 class="font-weight-bolder">Featured Accessories</h5>
+        <h5 class="font-weight-bolder mt-4 pt-4">Featured Accessories</h5>
         <div class="row">
           <div class="card col-6 col-md-4 col-xl-3 border-0">
             <img class="card-img-top" src="assets/rabeapick.jpeg" alt="Rabea Massad Pick">
@@ -323,7 +328,7 @@
           </div>
         </div>
 
-        <h5 class="font-weight-bolder">Featured Basses</h5>
+        <h5 class="font-weight-bolder mt-4 pt-4">Featured Basses</h5>
         <div class="row">
           <div class="card col-6 col-md-4 border-0">
             <img class="card-img-top" src="assets/espbass.jpg" alt="ESP LTD Bass">
@@ -366,76 +371,63 @@
       </section>
     </main>
     <footer class="bg-white mt-4">
-      <div class="container-fluid pt-4">
+      <div class="container-fluid pt-4 border-bottom">
         <div class="row footer-data">
-          <div class="col-lg-6 d-none d-md-block text-center">
-            <p class="text-secondary footer-description d-lg-none"><b>GuitarStore</b> is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, <b>GuitarStore</b> is the store where legends such as Jose Feliciano and Juanes shop for their shredding machines. <b>GuitarStore</b> is <b>THE</b> store. Period.</p>
-            <img class="d-none d-lg-block" src="assets/favicon.png" width="300" height="300" alt="Navbar Logo">
+          <div class="d-none d-md-block text-center logo-text-footer px-4">
+            <img src="assets/favicon.png" width="100" height="100" alt="Navbar Logo">
+            <p class="text-secondary footer-description pt-2"><b>GuitarStore</b> is the store of guitars. Servicing your guitar needs since 1438 in the heart of America, <b>GuitarStore</b> is the store where legends such as Jose Feliciano and Juanes shop for their shredding machines. <b>GuitarStore</b> is <b>THE</b> store. Period.</p>
           </div>
-          <div class="col-12">
-            <h5 class="pink border-pink pb-2 navigation-title">NAVIGATION</h5>
-            <ul class="navigation-links pl-0">
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">HOME</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SIGN IN</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SIGN UP</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">T & C</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">FAQ</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">HELP</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12">
+          <div class="col-12 footer-links">
             <h5 class="pink border-pink pb-2 navigation-title">CATEGORIES</h5>
-            <ul class="navigation-links pl-0">
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">ELECTRIC</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">ACOUSTIC</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">SEMI-HOLLOW</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">LAP</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">12-STRING</a>
-              </li>
-              <li class="navigation-link">
-                <a class="pink-hover" href="#">MANDOLIN</a>
-              </li>
-            </ul>
-            <div class="col-12 text-center pl-0">
-              <ul class="navigation-links d-flex pl-0">
-                <li class="navigation-link pr-2">
-                  <a class="pink-hover" href="#">
-                    <i class="fab fa-facebook-f h4"></i>
-                  </a>
+            <div class="footer-links-columns">
+              <ul class="navigation-links pl-0">
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">HOME</a>
                 </li>
-                <li class="navigation-link pr-2">
-                  <a class="pink-hover" href="#">
-                    <i class="fab fa-twitter h4"></i>
-                  </a>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SIGN IN</a>
                 </li>
-                <li class="navigation-link pr-2">
-                  <a class="pink-hover" href="#">
-                    <i class="fab fa-instagram h4"></i>
-                  </a>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SIGN UP</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">T & C</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">FAQ</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">HELP</a>
+                </li>
+              </ul>
+              <ul class="navigation-links pl-0">
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">ELECTRIC</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">ACOUSTIC</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">SEMI-HOLLOW</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">LAP</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">12-STRING</a>
+                </li>
+                <li class="navigation-link">
+                  <a class="pink-hover" href="#">MANDOLIN</a>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-secondary copyright pt-4">Copyright&#8471; 2020 GuitarStore.com. All Rights Reserverd. Designed by Mohammed Awad.</p>
           </div>
         </div>
       </div>
